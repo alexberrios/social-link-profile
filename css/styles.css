@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+/*define colors
+white: hsl(0, 0%, 100%)
+grey: hsl(0, 0%, 20%)
+darkGrey: hsl(0, 0%, 12%)
+offBlack: hsl(0, 0%, 8%) */
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%) ;
+}
+
+body{
+    background: var(--offBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+main{
+    background: var(--darkGrey);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 42px;
+    border-radius: 10px;
+    
+}
+
+main img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 90px;
+    margin-bottom: 25px;
+}
+
+main h2{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main h3{
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main p{
+    color: var(--white);
+    font-size: 12px;
+    margin: 1rem;
+    font-weight: 400;
+}
+
+main li{
+    color: var(--white);
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 10px;
+    background: var(--grey);
+    width: 300px;
+    display: flex;
+    align-content: center;
+    border-radius: 10px;
+}
+main li a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    justify-content: center;
+    font-size: 14px;
+}
+
+main li:hover{
+    background: var(--green);
+}
+
+main li:hover a{
+    color: var(--offBlack);
+}
